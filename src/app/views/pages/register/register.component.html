@@ -1,0 +1,38 @@
+<div class="bg-light dark:bg-transparent min-vh-100 d-flex flex-row align-items-center">
+  <c-container>
+    <c-row class="justify-content-center">
+      <c-col lg="7" md="9" xl="6">
+        <c-card class="mx-4">
+          <c-card-body class="p-4">
+            <form cForm (ngSubmit)="onSubmitRegister()">
+              <h1>Register</h1>
+              <p class="text-medium-emphasis">Create your account</p>
+
+              <c-input-group class="mb-3">
+                <span cInputGroupText>@</span>
+                <input autoComplete="email" cFormControl placeholder="Email" name="email" id="email"
+                       [(ngModel)]="email"/>
+              </c-input-group>
+
+              <div class="d-grid">
+                <button cButton color="success" (click)="onSubmitRegister()">Create Account</button>
+              </div>
+
+              <div class="or">
+                or
+              </div>
+
+              <div class="d-grid">
+                <a href="#" class="social-button" id="facebook-connect"> <span>Sign up with Facebook</span></a>
+                <a href="#" class="social-button" id="google-connect"> <span>Sign up with Google</span></a>
+                <a href="#" class="social-button" id="twitter-connect"> <span>Sign up with Twitter</span></a>
+                <a href="#" class="social-button" id="linkedin-connect"> <span>Sign up with LinkedIn</span></a>
+              </div>
+
+            </form>
+          </c-card-body>
+        </c-card>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>
